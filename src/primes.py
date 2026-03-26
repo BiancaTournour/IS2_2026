@@ -1,3 +1,4 @@
+#Funcion de numeros primos
 lower = 1
 upper = 500
 
