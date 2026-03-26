@@ -1,11 +1,11 @@
 import sys
+
 def factorial(num): 
     if num < 0: 
         print("Factorial de un número negativo no existe")
         return 0
     elif num == 0: 
         return 1
-        
     else: 
         fact = 1
         while(num > 1): 
@@ -14,9 +14,13 @@ def factorial(num):
         return fact 
 
 if len(sys.argv) < 2:
-    num = int(input("Ingrese un número: "))
+    rango = input("Ingrese un rango (ej. 4-8): ")
 else:
-    num = int(sys.argv[1])
+    rango = sys.argv[1]
 
-print("Factorial ", num, "! es ", factorial(num))
+partes = rango.split("-")
+desde = int(partes[0])
+hasta = int(partes[1])
 
+for num in range(desde, hasta + 1):
+    print("Factorial ", num, "! es ", factorial(num))
