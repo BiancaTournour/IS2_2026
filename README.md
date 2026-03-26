@@ -6,16 +6,24 @@ Repositorio de trabajos prácticos para Ingenieria de Software II - 2026
 
 ---
 
-## Contendio actual
+## Contenido actual
 
 ### TP1 - Gestión de la configuración y programación Python
 
-Incluye un programa en python que verifica si un numero es primo
+#### primes.py
+Verifica si un número es primo. Se ejecuta desde la línea de comandos.
 
-#### Funcionalidades
+#### factorial.py
+Calcula el factorial de un número o rango. Acepta:
+- Rango completo: `4-8`
+- Sin límite inferior: `-10` (calcula desde 1 hasta el número indicado)
+- Sin límite superior: `4-` (calcula desde el número indicado hasta 60)
 
-- Verificación de números primos
-- Ejecución desde línea de comandos
+#### factorial_OOP.py
+Misma funcionalidad que factorial.py pero implementada con programación orientada a objetos, usando la clase `Factorial` con el método `run(min, max)`.
+
+#### collatz.py
+Calcula la conjetura de Collatz para los números del 1 al 10000 y genera un gráfico con las iteraciones necesarias hasta converger.
 
 #### Tecnologías utilizadas
 
